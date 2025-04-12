@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakr Tech Academy</title>
+    
+    <!-- Favicon/Icon -->
+    <link rel="icon" href="../assets/images/icon.png" type="image/png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Google Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- css -->
+    <link href="../assets/css/common.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg" style="z-index: 1000;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo-dark.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#section-featuredRecommended">Featured & Recommended</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-about">About Me</a></li>
+                </ul>
+                <a href="#section-contact" class="btn btn-custom rounded-pill">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero d-flex align-items-center" id="hero" style="background-image: url('../assets/images/slides/1.jpg');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 order-md-2 text-center hero-left animate__animated animate__fadeInLeft">
+                        <img src="../assets/images/bakr.png" class="img-fluid" alt="Profile Image">
+                    </div>
+                    <div class="col-md-9 order-md-1 hero-content animate__animated animate__fadeInRight">
+                        <h1 class="hero-title">Hello! I am <span class="highlight-bta">Mohamed Bakr</span></h1>
+                        <p class="hero-sutitle d-none d-sm-block"><span class="bg-dark rounded px-3">Developer | Instructor | Researcher</span></p>
+                        <p>Welcome to Bakr Tech Academy. Here, we provide you with the best <span class="highlight-bta">Courses</span> and <span class="highlight-bta">Projects</span>.</p>
+                        <a href="courses.html" class="btn btn-custom rounded-pill mt-3">Get Started</a>
+                        <a href="https://www.youtube.com/@bakrtechacademy" class="btn btn-custom rounded-pill mt-3">Youtube Channel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="text-center" style="height: 10vh; background-color: #ebebeb;">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <h5 class="m-0 animate__animated animated-element-1">Specializing in <span class="highlight-bta fw-bold">Teaching</span>, <span class="highlight-bta fw-bold">Development</span>, and <span class="highlight-bta fw-bold">Requirements Engineering</span>.</h5>
+            </div>
+        </section>
+
+        <!-- Title Section -->
+        <section id="section-featuredRecommended" class="container-fluid py-4 section-starter">
+            <div class="text-center">
+                <h2 class="mb-1 section-title animate__animated animated-element-1">Featured & Recommended</h2>
+                <p class="mb-0 section-subtitle animate__animated animated-element-1">Premium Courses & Projects</p>
+            </div>
+        </section>
+
+        <section class="container-fluid bg-texture-1 py-4">
+            <div class="container mb-4">
+                <a href="projects.html?id=1" class="text-decoration-none">
+                <div class="featured-container animate__animated animated-element-1">
+                    <div class="row">
+                        <!-- Left Side: Big Image -->
+                        <div class="col-md-7">
+                            <img src="../app/data/projects/1/cover.jpg" class="img-fluid rounded" alt="Featured Item">
+                        </div>
+                        <!-- Right Side: Title + Thumbnails + Description -->
+                        <div class="col-md-5 d-flex flex-column">
+                            <h3 class="item-title">Story-Based Game</h3>
+                            <div class="item-thumbnails">
+                                <img src="../app/data/projects/1/1.png" alt="Item Screenshot">
+                                <img src="../app/data/projects/1/2.png" alt="Item Screenshot">
+                                <img src="../app/data/projects/1/3.png" alt="Item Screenshot">
+                                <img src="../app/data/projects/1/4.png" alt="Item Screenshot">
+                            </div>
+                            <p class="item-description">
+                                Web-Based Story-Based Game with 2-Player Turn-Based Combat Subsystem with Multi-Difficulty AI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="container mb-4 animate__animated animated-element-1">
+                <div class="row">
+                    <!-- item 1 -->
+                    <div class="col-md-4">
+                        <div class="card item-card">
+                            <a href="courses.html?id=1">
+                                <img src="../app/data/courses/1/cover.jpg" alt="item 1">
+                                <div class="item-card-body">
+                                    <p class="item-name">C++ Programming Fundamentals</p>
+                                    <p class="item-info">Learn the fundamentals of programming with essential concepts and hands-on practice to kickstart your coding journey!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="col-md-4">
+                        <div class="card item-card">
+                            <a href="courses.html?id=5">
+                                <img src="../app/data/courses/5/cover.jpg" alt="item 2">
+                                <div class="item-card-body">
+                                    <p class="item-name">Data Mining Via Generative AI using Gemini</p>
+                                    <p class="item-info">Learn the different types of prompt engineering techniques, and how to use Generative AI for data analytics.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="col-md-4">
+                        <div class="card item-card">
+                            <a href="courses.html?id=2">
+                                <img src="../app/data/courses/2/cover.jpg" alt="item 3">
+                                <div class="item-card-body">
+                                    <p class="item-name">Software Engineering for Beginners</p>
+                                    <p class="item-info">Learn how to draw UML Diagrams and how to write requirements.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Title Section -->
+        <section id="section-courses" class="container-fluid py-4 section-starter">
+            <div class="text-center">
+                <h2 class="mb-1 section-title animate__animated animated-element-1">Courses</h2>
+                <p class="mb-0 section-subtitle animate__animated animated-element-1">Learn Easily with BTA</p>
+            </div>
+        </section>
+
+        <section class="container-fluid py-4 bg-texture-4">
+            <div class="container mb-4">
+                <div class="row animate__animated animated-element-2">
+                    <!-- item 1 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="courses.html?id=4">
+                                <img src="../app/data/courses/4/cover.jpg" alt="item 1">
+                                <div class="item-card-body">
+                                    <p class="item-name">Data Analytics for Beginners</p>
+                                    <p class="item-info">Learn Core Concepts Data Collection, Exploration, Preprocessing, Mining, Evaluation, and Visualization Using Python.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="courses.html?id=5">
+                                <img src="../app/data/courses/5/cover.jpg" alt="item 2">
+                                <div class="item-card-body">
+                                    <p class="item-name">Data Mining Via Generative AI using Gemini</p>
+                                    <p class="item-info">Learn the different types of prompt engineering techniques, and how to use Generative AI for data analytics.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="courses.html?id=1">
+                                <img src="../app/data/courses/1/cover.jpg" alt="item 3">
+                                <div class="item-card-body">
+                                    <p class="item-name">C++ Programming Fundamentals</p>
+                                    <p class="item-info">Learn the fundamentals of programming with essential concepts and hands-on practice to kickstart your coding journey!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="courses.html?id=2">
+                                <img src="../app/data/courses/2/cover.jpg" alt="item 4">
+                                <div class="item-card-body">
+                                    <p class="item-name">Software Engineering for Beginners</p>
+                                    <p class="item-info">Learn how to draw UML Diagrams and how to write requirements.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <!-- item 5 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="courses.html?id=3">
+                                <img src="../app/data/courses/3/cover.jpg" alt="item 4">
+                                <div class="item-card-body">
+                                    <p class="item-name">Full-Stack Web Development: PHP Native</p>
+                                    <p class="item-info">Learn Front-End (HTML 5, CSS 3, JS, JQuery, AJAX, Bootstrap 5, Animate.css), and Back-End (PHP, MySQL).</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 6 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="courses.html?id=6">
+                                <img src="../app/data/courses/6/cover.jpg" alt="item 4">
+                                <div class="item-card-body">
+                                    <p class="item-name">Prewriting Stage of Storywriting</p>
+                                    <p class="item-info">Learn the core concepts of storywriting. (Important for Game Developers)</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row animate__animated animated-element-2">
+                    <div class="col text-center">
+                        <a href="courses.html" class="btn btn-custom rounded-pill mt-3">View All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Title Section -->
+        <section id="section-projects" class="container-fluid py-4 section-starter">
+            <div class="text-center">
+                <h2 class="mb-1 section-title animate__animated animated-element-1">Projects</h2>
+                <p class="mb-0 section-subtitle animate__animated animated-element-1">Showcasing Creativity & Innovation</p>
+            </div>
+        </section>
+
+        <section class="container-fluid py-4 bg-texture-2">
+            <div class="container mb-4">
+                <div class="row animate__animated animated-element-3">
+                    <!-- item 1 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="projects.html?id=1">
+                                <img src="../app/data/projects/1/cover.jpg" alt="item 1">
+                                <div class="item-card-body">
+                                    <p class="item-name">Story-Based Game</p>
+                                    <p class="item-info">Web-Based Story-Based Game with 2-Player Turn-Based Combat Subsystem with Multi-Difficulty AI</p>
+                                    <p class="item-info">HTML 5, CSS 3, JS, JQuery, Bootstrap, Animate.css, Electron</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="projects.html?id=2">
+                                <img src="../app/data/projects/2/cover.jpg" alt="item 4">
+                                <div class="item-card-body">
+                                    <p class="item-name">Artz: Visual Novels Builder & E-Commerce Website</p>
+                                    <p class="item-info">E-Commerce and Builder Website for Visual Novels</p>
+                                    <p class="item-info">HTML 5, CSS 3, JS, JQuery, AJAX, XML, Bootstrap, PHP, MySQL</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="projects.html?id=3">
+                                <img src="../app/data/projects/3/cover.jpg" alt="item 3">
+                                <div class="item-card-body">
+                                    <p class="item-name">My School</p>
+                                    <p class="item-info">Website for parents to apply for schools, and has a request form builder.</p>
+                                    <p class="item-info">HTML 5, CSS 3, JS, JQuery, AJAX, Bootstrap, PHP, MySQL</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="col-md-3">
+                        <div class="card item-card">
+                            <a href="projects.html?id=4">
+                                <img src="../app/data/projects/4/cover.jpg" alt="item 2">
+                                <div class="item-card-body">
+                                    <p class="item-name">Rainmeter Creator</p>
+                                    <p class="item-info">Desktop App that creates rainmeter desktop skins</p>
+                                    <p class="item-info">Rainmeter, C# .Net</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row animate__animated animated-element-2">
+                    <div class="col text-center">
+                        <a href="projects.html" class="btn btn-custom rounded-pill mt-3">View All Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Title Section -->
+        <section id="section-about" class="container-fluid py-4 section-starter">
+            <div class="text-center">
+                <h2 class="mb-1 section-title animate__animated animated-element-1">About Me</h2>
+                <p class="mb-0 section-subtitle animate__animated animated-element-1">Learn More About <span class="highlight-bta fw-bold">Mohamed Bakr</span>'s Capabilities</p>
+            </div>
+        </section>
+
+        <section class="container-fluid py-4 bg-texture-1">
+            <div class="container animate__animated animated-element-1">
+                <div class="row g-3">
+                    <!-- General -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-general">General</h4>
+                            <p>Microsoft Office, Google Apps (including Classroom & Meet), Linux, Photoshop, PowerBI, Storytelling</p>
+                        </div>
+                    </div>
+        
+                    <!-- Web & Game Development -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-web">Web & Game Development</h4>
+                            <p>HTML, CSS, JavaScript, Bootstrap, XML, JSON, PHP, MySQL, MongoDB, Electron</p>
+                        </div>
+                    </div>
+        
+                    <!-- Data Analytics -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-data">Data Analytics</h4>
+                            <p>Python, Gemini API</p>
+                        </div>
+                    </div>
+        
+                    <!-- Software Engineering -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-se">Software Engineering</h4>
+                            <p>Requirements Engineering, UML Design</p>
+                        </div>
+                    </div>
+        
+                    <!-- Programming -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-programming">Programming</h4>
+                            <p>C++, Java, C#, Visual Basic</p>
+                        </div>
+                    </div>
+        
+                    <!-- Business Process Management -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-bpm">Business Process Management (BPM)</h4>
+                            <p>Camunda, Postman</p>
+                        </div>
+                    </div>
+        
+                    <!-- Automation -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-automation">Automation</h4>
+                            <p>PowerShell 5, Bash Scripting</p>
+                        </div>
+                    </div>
+        
+                    <!-- Soft Skills -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-soft">Soft Skills</h4>
+                            <p>Analytical Thinking, Problem-Solving, Presentation</p>
+                        </div>
+                    </div>
+        
+                    <!-- Language Skills -->
+                    <div class="col-md-4">
+                        <div class="skills-card">
+                            <h4 class="title-language">Language Skills</h4>
+                            <p>Arabic (Native), English</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <!-- Title Section -->
+     <section id="section-contact" class="container-fluid py-4 section-starter">
+        <div class="text-center">
+            <h2 class="mb-1 section-title animate__animated animated-element-1">Contact Me</h2>
+            <p class="mb-0 section-subtitle animate__animated animated-element-1">Get In Touch With <span class="highlight-bta fw-bold">Mohamed Bakr</span></p>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-texture-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column: Contact Info -->
+                <div class="col-lg-4">
+                    <div class="contact-item d-flex align-items-center mb-4">
+                        <div class="icon-circle bg-secondary text-white">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p class="contact-text ms-3">
+                            <a href="mailto:mfouadbakr2015@gmail.com">mfouadbakr2015@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-item d-flex align-items-center mb-4">
+                        <div class="icon-circle bg-secondary text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <p class="contact-text ms-3">
+                            <a href="https://eg.linkedin.com/in/mohamed-bakr-702966291" target="_blank">mohamed-bakr-702966291</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-item d-flex align-items-center mb-4">
+                        <div class="icon-circle bg-secondary text-white">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <p class="contact-text ms-3">
+                            <a href="https://github.com/mfouadbakr" target="_blank">mfouadbakr</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-item d-flex align-items-center mb-4">
+                        <div class="icon-circle bg-secondary text-white">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <p class="contact-text ms-3">
+                            <a href="https://www.youtube.com/@bakrtechacademy" target="_blank">Bakr Tech Academy</a>
+                        </p>
+                    </div>                    
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-lg-8">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc3T19veGTtY_JnSKb2zSU-gDBMVCVvX5ycLdU6Vbe1eHI-9g/formResponse" method="POST">
+                        <!-- Request Type -->
+                        <div class="mb-3">
+                            <label class="form-label">Request Type</label>
+                            <div class="request-options">
+                                <label class="radio-option">
+                                    <input type="radio" name="entry.198607469" value="Inquiry" onclick="updateSubtitle(this)" checked> <span>Inquiry</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="entry.198607469" value="Teaching" onclick="updateSubtitle(this)"> <span>Teaching</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="entry.198607469" value="Consultation" onclick="updateSubtitle(this)"> <span>Consultation</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="entry.198607469" value="Other" onclick="updateSubtitle(this)"> <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="entry.2005620554" placeholder="Enter your name" required>
+                        </div>
+                    
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="entry.1045781291" placeholder="Enter your email" required>
+                        </div>
+                    
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Your Phone (Optional)</label>
+                            <input type="text" class="form-control" id="phone" name="entry.1166974658" placeholder="Enter your phone" required>
+                        </div>
+                    
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="entry.839337160" rows="4" placeholder="Write your message here..." required></textarea>
+                        </div>
+                    
+                        <!-- Hidden Inputs (To ensure proper form processing) -->
+                        <input type="hidden" name="entry.2005620554" value=""> <!-- Name -->
+                        <input type="hidden" name="entry.1045781291" value=""> <!-- Email -->
+                        <input type="hidden" name="entry.198607469" value=""> <!-- Type -->
+                        <input type="hidden" name="entry.1166974658" value=""> <!-- Phone Number -->
+                        <input type="hidden" name="entry.839337160" value=""> <!-- Message -->
+                    
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom rounded-pill">Send Message</button>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3 border-top">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 <strong>Bakr Tech Academy</strong>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <!-- Bootstrap 5 JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JS -->
+    <script src="../assets/js/backgroundChanger.js"></script>
+    <script src="../assets/js/common.js"></script>
+
+    <script>
+        // dynamic fixed header
+        $(document).ready(function () {
+            let $header = $("nav");
+            let headerHeight = $header.outerHeight(); // Get navbar height
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > headerHeight) {
+                    $header.addClass("position-fixed top-0 w-100 shadow-sm");
+                } else {
+                    $header.removeClass("position-fixed top-0 w-100 shadow-sm");
+                }
+            });
+
+            // Fix anchor scrolling issue considering navbar state
+            $("a[href^='#']").on("click", function (event) {
+                let target = $($(this).attr("href"));
+
+                if (target.length) {
+                    event.preventDefault();
+
+                    let isFixed = $header.hasClass("position-fixed");
+                    let offset = target.offset().top - (isFixed ? headerHeight : 0); 
+                    // If nav is already fixed, subtract height; else, don't
+
+                    $("html, body").stop().animate({ scrollTop: offset }, 0);
+                }
+                });
+        });
+    </script>
+
+</body>
+</html>

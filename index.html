@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading...</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-dark.png" />
+
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Google Font for clean modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      width: 40%;
+      max-width: 300px;
+      min-width: 120px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .loading-text {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0.3; }
+      to { opacity: 1; }
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <img src="assets/images/logo-dark.png" alt="Logo" class="animate__animated animate__fadeInDown" />
+  <div class="loading-text">Loading, please wait...</div>
+  <div class="spinner"></div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "app/index.html";
+    }, 2000); // 2 seconds
+  </script>
+</body>
+</html>
