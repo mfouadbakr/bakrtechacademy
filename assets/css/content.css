@@ -1,0 +1,37 @@
+/* Content Pages Specific */
+.btnItem {
+    text-align: left;
+}
+
+.btnItem-active{
+    border-left: 4px solid #e70000 !important;
+}
+
+.imgItem {
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+.imgItem:hover {
+    transform: scale(1.05); /* Increases size by 5% on hover */
+}
+
+/* Modal CSS */
+.modal-body {
+    padding: 30px;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+#success-message {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        height: auto !important;
+    }
+}

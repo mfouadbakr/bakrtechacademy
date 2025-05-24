@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakr Tech Academy</title>
+
+    <meta name="description" content="Bakr Tech Academy offers courses in programming, data mining, and software engineering. Learn from Mohamed Bakr through structured courses and practical projects. Start your tech journey today!">
+    <meta name="keywords" content="programming, data mining, software engineering, online courses, Mohamed Bakr, C++, Python, PHP, web development, data analytics, UML, tutorials, tech academy, online learning, free courses, software development">
+    <meta name="author" content="Mohamed Bakr">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="Bakr Tech Academy - Learn Programming, Data Mining & Software Engineering">
+    <meta property="og:description" content="Learn programming, data mining, and software engineering with Bakr Tech Academy. We offer structured courses and practical projects to help you succeed.">
+    <meta property="og:image" content="https://mfouadbakr.github.io/bakrtechacademy/assets/images/logo-dark.png">
+    <meta property="og:url" content="https://mfouadbakr.github.io/bakrtechacademy/">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon/Icon -->
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Google Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- css -->
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/content.css" rel="stylesheet">
+    
+</head>
+<body style="overflow-y: hidden;">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-lg" style="z-index: 1000; height: 6vh;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-dark.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link highlight-bta fw-bold" href="courses.html?id=1">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html?id=1">Projects</a></li>
+                </ul>
+                <!-- YouTube Button with Smooth Hover Effect -->
+                <a href="https://www.youtube.com/@bakrtechacademy" target="_blank" class="btn rounded-pill mx-1 youtube-btn">
+                    <i class="fab fa-youtube fa-lg me-1"></i> Youtube
+                </a>
+                <a href="index.html#section-contact" class="btn btn-custom rounded-pill"><i class="fas fa-graduation-cap fa-lg me-2"></i> Teach Me</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container-fluid">
+        <div class="row">
+            <!-- Side Bar -->
+            <div id="sidebar" class="col-md-2 p-3" style="height: 88vh; background-color: rgb(228, 228, 228);">
+                <section>
+                    <div id="1" class="btnItem btn btn-light border rounded w-100 p-2 mb-1 btnItem-active"><span class="d-none">1</span>C++ Programming Fundamentals</div>
+                    <div id="2" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">2</span>Software Engineering for Beginners</div>
+                    <div id="3" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">3</span>Full-Stack Web Development: PHP Native</div>
+                    <div id="4" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">4</span>Data Analytics for Beginners</div>
+                    <div id="5" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">5</span>Data Mining Via Generative AI using Gemini</div>
+                    <div id="6" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">6</span>Prewriting Stage of Storywriting</div>
+                </section>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-10 p-4" style="height: 88vh; overflow-y: scroll;">
+                
+                <div id="listContent" class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 pb-3 px-3">
+                        <select id="course-select" class="form-select">
+                            <option value="1" selected>C++ Programming Fundamentals</option>
+                            <option value="2">Software Engineering for Beginners</option>
+                            <option value="3">Full-Stack Web Development: PHP Native</option>
+                            <option value="4">Data Analytics for Beginners</option>
+                            <option value="5">Data Mining Via Generative AI using Gemini</option>
+                            <option value="6">Prewriting Stage of Storywriting</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+
+                <main class="container-fluid">
+                    <!-- Main Course Content Section -->
+                    <div class="row">
+                        <!-- Course Info Section -->
+                        <div class="col-md-8">
+                            <div class="container-fluid bg-light py-3 rounded border mb-4">
+                                <div class="row px-2">
+                                    <div class="col-md-5">
+                                        <!-- Course Image -->
+                                        <img src="data/courses/1/cover.jpg" class="imgItem img-fluid rounded border" alt="Course Image" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4 class="rounded fw-bold mt-1">C++ Programming Fundamentals</h4>
+                                        <!-- Short Description -->
+                                        <p class="mt-2">Learn the fundamentals of programming with essential concepts and hands-on practice to kickstart your coding journey!</p>
+                                        
+                                        <!-- Button and YouTube Link Wrapper -->
+                                        <div style="display: flex; align-items: center; gap: 15px;">
+                                            <!-- YouTube Link -->
+                                            <a href="unavailable.html" style="color: black; text-decoration: none; font-size: 32px; display: flex; align-items: center; gap: 5px; transition: color 0.3s ease;"
+                                               onmouseover="this.style.color='red'" 
+                                               onmouseout="this.style.color='black'">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                            <!-- Download Button -->
+                                            <a href="unavailable.html" class="btn btn-custom rounded-pill">
+                                                Download Materials
+                                            </a>
+                                    
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Topics List -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Course Content</h4>
+                            <ul class="animate__animated animated-element-2">
+                                <li>Flowchart</li>
+                                <li>Input/Output</li>
+                                <li>Variables</li>
+                                <li>Operators</li>
+                                <li>If Statements</li>
+                                <li>Loop Statements</li>
+                                <li>Nested Statements</li>
+                                <li>Functions</li>
+                                <li>Arrays</li>
+                                <li>Struct</li>
+                                <li>Object Oriented Programming</li>
+                                <li>Pointers</li>
+                                <li>Programming Exercises</li>
+                            </ul>
+
+                            <!-- Prerequisites -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Prerequisites</h4>
+                            <ul class="animate__animated animated-element-2">
+                                <li>None are Required</li>
+                            </ul>
+
+                            <!-- Tools -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Tools</h4>
+                            <ul class="animate__animated animated-element-2">
+                                <li>Code Blocks or any IDE or Online compiler</li>
+                            </ul>
+
+                            <!-- Screenshots -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Screenshots</h4>
+                            <div class="container-fluid animate__animated animated-element-2 mb-3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="data/courses/1/1.png" class="imgItem img-fluid rounded border" alt="Screenshot" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Ad Area -->
+                        <div class="col-md-3 text-center">
+                            <a id="ad1" href="https://www.youtube.com/@bakrtechacademy" class="imgItem"><img src="assets/images/ad.jpg" alt="Advertisement" class="img-fluid rounded"></a>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-light border-top" style="height: 6vh;">
+        <div class="row">
+            <div class="col text-center pt-3">
+                <p style="color:black !important;">© 2025 <strong><span class="highlight-bta">Bakr Tech Academy</span></strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Downloading Materials -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="downloadModalLabel">Request Materials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="requestForm">
+                        <!-- Email Input -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+                        <!-- Optional Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Why do you want this course?</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your message (optional)"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-custom">Submit Request</button>
+                    </form>
+                    <p id="success-message" class="mt-1" style="display:none;">
+                        Thank you! <a id="downloadLink" href="download.html" class="highlight-bta">Click here</a> to access the materials.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Enlarged Image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered"> <!-- Changed to modal-xl -->
+            <div class="modal-content border-0 bg-transparent shadow-none"> <!-- Optional: transparent bg -->
+                <div class="modal-body p-0 position-relative">
+                    <!-- Close Button -->
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                    <!-- Large Image -->
+                    <img id="modalImage" src="" class="w-100 h-auto" alt="Enlarged Course Image" style="max-height: 90vh; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <!-- Bootstrap 5 JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JS -->
+    <script src="assets/js/backgroundChanger.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/courseContent.js"></script>
+    <script src="assets/js/contentMobile.js"></script>
+</body>
+</html>

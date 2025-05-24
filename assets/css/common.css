@@ -1,0 +1,407 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Replaced Roboto */
+}
+
+/* Headings & Section Title */
+h2,h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p, label, input, textarea {
+    font-family: 'Inter', sans-serif; /* Replaced Roboto */
+    font-weight: 400;
+}
+
+/* Button Styling */
+.btn-custom {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/*Common Styles*/
+
+.nav-item{
+    font-weight: 500;
+}
+
+.nav-item :hover{
+    color: #e70000 !important;
+}
+
+.highlight-bta{
+    color: #e70000;
+}
+.btn-custom {
+  background-color: #e70000;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.btn-custom:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.card{
+    margin-bottom: 15px;
+}
+
+/* Textures Styles*/
+
+.bg-texture-1 {
+    background-image: url('../images/textures/texture-1.png');
+    background-position: center;
+}
+
+.bg-texture-2 {
+    background-image: linear-gradient(to left, #ff2b2b, #1f1f1f); /* Example gradient colors */
+    background-position: center;
+}
+
+.bg-texture-3 {
+    background-image: linear-gradient(to left, #ff9a8b, #fad0c4); /* Soft pink to light peach gradient */
+    background-position: center;
+}
+
+.bg-texture-4 {
+    background-image: linear-gradient(to right, #ffffff, #1f1f1f); /* Sky blue to deep blue gradient */
+    background-position: center;
+}
+
+.bg-texture-5 {
+    background-image: linear-gradient(to top, #b6b6b6, #cfcfcf); /* Mint green to light blue gradient */
+    background-position: center;
+}
+
+/* Hero Styles */
+.hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    padding: 50px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        height: auto;       /* Let height grow with content */
+        padding-top: 30px !important;  /* Adjust these values as needed */
+        padding-bottom: 30px !important;
+        /* You can keep horizontal padding as is or reset it */
+    }
+}
+
+/* Background breathing effect only on desktop */
+@media (min-width: 768px) {
+    @keyframes breathing {
+        0% { background-size: 100%; }
+        50% { background-size: 105%; }
+        100% { background-size: 100%; }
+    }
+    .hero {
+        animation: breathing 8s infinite ease-in-out;
+    }
+}
+
+.hero-left img {
+    width: 100%;
+    /*max-width: 200px;*/ /* Smaller size */
+    filter: brightness(0.9);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.8rem; /* smaller on phones */
+    }
+}
+
+.hero-sutitle {
+    color: #dadada;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .hero-sutitle {
+        font-size: 1rem;
+    }
+}
+
+/* Hide left column on mobile */
+@media (max-width: 1000px) {
+    .hero-left {
+        display: none;
+    }
+}
+
+/* Section Starter Styles */
+
+.section-starter{
+    background-color: #f8f9fa;
+    border-bottom: 4px solid #bcbcbc;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-subtitle{
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Featured Item Styles */
+
+.featured-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Keeps text color consistent */
+    display: block; /* Makes the whole section clickable */
+}
+.featured-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.featured-title {
+    color: #212529;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.item-title {
+    color: #343a40;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.item-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.item-thumbnails img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.item-thumbnails img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.item-description {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*Card Styles*/
+
+.item-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 375px;
+}
+.item-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.item-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+.item-card img {
+    width: 100%;
+    /*height: 200px;*/
+    object-fit: cover;
+}
+.item-card-body {
+    text-align: left;
+    padding: 15px;
+}
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+}
+.item-subtitle {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+.item-info {
+    font-size: 14px;
+    color: #666;
+}
+@media (max-width: 768px) {
+    .item-card {
+        margin-bottom: 20px; /* Adds space between cards on small screens */
+    }
+}
+
+/* About Styles */
+
+.skills-card {
+    background: rgb(221, 221, 221);
+    border-radius: 12px !important;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 150px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skills-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+.skills-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    flex-grow: 1; /* Ensures text is well-positioned */
+}
+
+/* Unique title colors */
+.title-general { background: #d32f2f; } /* Red */
+.title-web { background: #d32f2f; } /* Blue */
+.title-data { background: #d32f2f; } /* Green */
+.title-se { background: #d32f2f; } /* Purple */
+.title-programming { background: #d32f2f; } /* Orange */
+.title-bpm { background: #d32f2f; } /* Teal */
+.title-automation { background: #d32f2f; } /* Pink */
+.title-soft { background: #d32f2f; color: #333; } /* Yellow */
+.title-language { background: #d32f2f; } /* Grey */
+
+/* Contact Styles */
+
+/* General */
+.form-label {
+    font-weight: 600;
+}
+
+/* Left Column: Icons + Text */
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black; /* Ensure text is black */
+    margin: 0;
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+    color: #cc0000;
+}
+
+/* Radio Buttons */
+.request-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio-option {
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: black; /* Ensure text is black */
+    font-weight: bold;
+}
+
+.radio-option input {
+    margin-right: 8px;
+    accent-color: #cc0000; /* Red radio button */
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #222; /* Dark background */
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc; /* Light gray text */
+}
+
+footer p strong {
+    color: #cc0000; /* White color for the academy name */
+}
+
+footer a {
+    color: #cc0000; /* Red color for links (if any) */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.youtube-btn,
+.youtube-btn i {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.youtube-btn:hover,
+.youtube-btn:hover i {
+    color: red;
+}

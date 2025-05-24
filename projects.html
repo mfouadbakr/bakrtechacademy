@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakr Tech Academy</title>
+
+    <meta name="description" content="Explore the diverse range of projects developed at Bakr Tech Academy. Showcasing innovative work in programming, data mining, and software engineering.">
+    <meta name="keywords" content="programming projects, data mining projects, software engineering projects, Mohamed Bakr, Bakr Tech Academy, online projects, project showcase, coding projects, web development projects">
+    <meta name="author" content="Mohamed Bakr">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="Projects - Bakr Tech Academy">
+    <meta property="og:description" content="Explore the diverse range of projects developed at Bakr Tech Academy. Showcasing innovative work in programming, data mining, and software engineering.">
+    <meta property="og:image" content="https://mfouadbakr.github.io/bakrtechacademy/assets/images/logo-dark.png">
+    <meta property="og:url" content="https://mfouadbakr.github.io/bakrtechacademy/projects.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon/Icon -->
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Google Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- css -->
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/content.css" rel="stylesheet">
+    
+</head>
+<body style="overflow-y: hidden;">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-lg" style="z-index: 1000; height: 6vh;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-dark.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html?id=1">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link highlight-bta fw-bold" href="projects.html?id=1">Projects</a></li>
+                </ul>
+                <!-- YouTube Button with Smooth Hover Effect -->
+                <a href="https://www.youtube.com/@bakrtechacademy" target="_blank" class="btn rounded-pill mx-1 youtube-btn">
+                    <i class="fab fa-youtube fa-lg me-1"></i> Youtube
+                </a>
+                <a href="index.html#section-contact" class="btn btn-custom rounded-pill"><i class="fas fa-graduation-cap fa-lg me-2"></i> Teach Me</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container-fluid">
+        <div class="row">
+            <!-- Side Bar -->
+            <div id="sidebar" class="col-md-2 p-3" style="height: 88vh; background-color: rgb(228, 228, 228);">
+                <section>
+                    <div id="1" class="btnItem btn btn-light border rounded w-100 p-2 mb-1 btnItem-active"><span class="d-none">1</span>Story-Based Game</div>
+                    <div id="2" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">2</span>Artz: Visual Novels Builder & E-Commerce Website</div>
+                    <div id="3" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">3</span>My School</div>
+                    <div id="4" class="btnItem btn btn-light border rounded w-100 p-2 mb-1"><span class="d-none">4</span>Rainmeter Creator</div>
+                </section>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-10 p-4" style="height: 88vh; overflow-y: scroll;">
+
+                <div id="listContent" class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 pb-3 px-3">
+                        <select id="course-select" class="form-select">
+                            <option value="1" selected>Story-Based Game</option>
+                            <option value="2">Artz: Visual Novels Builder &amp; E-Commerce Website</option>
+                            <option value="3">My School</option>
+                            <option value="4">Rainmeter Creator</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+
+                <main class="container-fluid">
+                    <!-- Main Course Content Section -->
+                    <div class="row">
+                        <!-- Course Info Section -->
+                        <div class="col-md-8">
+                            <div class="container-fluid bg-light py-3 rounded border mb-4">
+                                <div class="row px-2">
+                                    <div class="col-md-5">
+                                        <!-- Course Image -->
+                                        <img src="data/projects/1/cover.jpg" class="imgItem img-fluid rounded border" alt="Course Image" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4 class="rounded fw-bold mt-1">Story-Based Game</h4>
+                                        <!-- Short Description -->
+                                        <p class="mt-2">Web-Based Story-Based Game with 2-Player Turn-Based Combat Subsystem with Multi-Difficulty AI</p>
+                                        
+                                        <!-- Button and YouTube Link Wrapper -->
+                                        <div style="display: flex; align-items: center; gap: 15px;">
+                                            <!-- Download Button -->
+                                            <a href="unavailable.html" class="btn btn-custom rounded-pill">
+                                                View Project
+                                            </a>
+                                    
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Topics List -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Project Content</h4>
+                            <ul class="animate__animated animated-element-2">
+                                <li>Dialogues</li>
+                                <li>Turn-Based Combat</li>
+                                <li>2 Player Combat</li>
+                                <li>Multiple Difficulties AI for Combat</li>
+                                <li>AI Voice Actors</li>
+                            </ul>
+
+                            <!-- Tools -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Tools</h4>
+                            <ul class="animate__animated animated-element-2">
+                                <li>HTML 5, CSS 3, JS, Bootstrap 4, JQuery, AJAX, XML</li>
+                            </ul>
+
+                            <!-- Screenshots -->
+                            <h4 style="border-left: 8px solid #cc0000;" class="px-2 fw-bold animate__animated animated-element-1 bg-light rounded py-1">Screenshots</h4>
+                            <div class="container-fluid animate__animated animated-element-2 mb-3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="data/projects/1/1.png" class="imgItem img-fluid rounded border" alt="Screenshot" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="data/projects/1/2.png" class="imgItem img-fluid rounded border" alt="Screenshot" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="data/projects/1/3.png" class="imgItem img-fluid rounded border" alt="Screenshot" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="data/projects/1/4.png" class="imgItem img-fluid rounded border" alt="Screenshot" style="max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Ad Area -->
+                        <div class="col-md-3 text-center">
+                            <a id="ad1" href="https://www.youtube.com/@bakrtechacademy" class="imgItem"><img src="assets/images/ad.jpg" alt="Advertisement" class="img-fluid rounded"></a>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-light border-top" style="height: 6vh;">
+        <div class="row">
+            <div class="col text-center pt-3">
+                <p style="color:black !important;">© 2025 <strong><span class="highlight-bta">Bakr Tech Academy</span></strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Enlarged Image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered"> <!-- Changed to modal-xl -->
+            <div class="modal-content border-0 bg-transparent shadow-none"> <!-- Optional: transparent bg -->
+                <div class="modal-body p-0 position-relative">
+                    <!-- Close Button -->
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                    <!-- Large Image -->
+                    <img id="modalImage" src="" class="w-100 h-auto" alt="Enlarged Course Image" style="max-height: 90vh; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <!-- Bootstrap 5 JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JS -->
+    <script src="assets/js/backgroundChanger.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/projectContent.js"></script>
+    <script src="assets/js/contentMobile.js"></script>
+</body>
+</html>
