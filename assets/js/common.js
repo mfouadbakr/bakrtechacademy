@@ -27,15 +27,3 @@
         // Run on page load
         handleScroll();
     });
-
-    // JavaScript for Request Type Subtitle
-    function updateSubtitle(selected) {
-        const subtitle = document.getElementById("requestSubtitle");
-        const descriptions = {
-            "Inquiry": "General questions or inquiries.",
-            "Teaching": "Want me to teach something specific.",
-            "Consultation": "Software requirements engineering assistance.",
-            "Other": "Any other type of request."
-        };
-        subtitle.textContent = descriptions[selected.value] || "";
-    }

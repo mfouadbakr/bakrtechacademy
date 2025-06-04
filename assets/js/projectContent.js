@@ -23,7 +23,7 @@ const courses = {
         tools: ['HTML 5, CSS 3, JS, Bootstrap 4, Animate.CSS, JQuery, AJAX, XML, Photoshop, Illustrator'],
         screenshots: ['data/projects/1/1.png', 'data/projects/1/2.png', 'data/projects/1/3.png', 'data/projects/1/4.png'],
         coverImage: 'data/projects/1/cover.jpg',
-        projectLink: 'https://example.com/story-based-game'
+        projectLink: 'unavailable.html'
     },
     2: {
         title: 'Artz: Visual Novel Builder & E-Commerce Website',
@@ -33,7 +33,7 @@ const courses = {
         tools: ['HTML 5, CSS 3, JS, JQuery, AJAX, XML, Bootstrap, Animate.CSS, PHP, MySQL'],
         screenshots: ['data/projects/2/1.png', 'data/projects/2/2.png', 'data/projects/2/3.png', 'data/projects/2/4.png', 'data/projects/2/5.png'],
         coverImage: 'data/projects/2/cover.jpg',
-        projectLink: 'https://example.com/artz-visual-novel-builder'
+        projectLink: 'https://github.com/mfouadbakr/artzPrototype'
     },
     3: {
         title: 'My School',
@@ -43,7 +43,7 @@ const courses = {
         tools: ['HTML 5, CSS 3, JS, JQuery, AJAX, XML, Bootstrap 4, PHP, MySQL'],
         screenshots: ['data/projects/3/1.png', 'data/projects/3/2.png', 'data/projects/3/3.png', 'data/projects/3/4.png', 'data/projects/3/5.png', 'data/projects/3/6.png', 'data/projects/3/7.png'],
         coverImage: 'data/projects/3/cover.jpg',
-        projectLink: 'https://example.com/my-school'
+        projectLink: 'https://github.com/mfouadbakr/myschool'
     },
     4: {
         title: 'Rainmeter Creator',
@@ -53,7 +53,7 @@ const courses = {
         tools: ['Rainmeter, C# .Net'],
         screenshots: ['data/projects/4/1.png', 'data/projects/4/2.png', 'data/projects/4/3.png', 'data/projects/4/4.png', 'data/projects/4/5.png'],
         coverImage: 'data/projects/4/cover.jpg',
-        projectLink: 'https://example.com/rainmeter-creator'
+        projectLink: 'https://github.com/mfouadbakr/rainmetercreator'
     }
 };
 

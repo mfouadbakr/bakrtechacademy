@@ -41,8 +41,8 @@ const courses = {
         tools: ['Code Blocks or any IDE or Online compiler'],
         screenshots: ['data/courses/1/1.png'],
         coverImage: 'data/courses/1/cover.jpg',
-        youtube: 'https://www.youtube.com/channel/your-channel-or-video-link-1',
-        materials: 'data/courses/1/materials.zip'  // <-- materials link
+        youtube: 'unavailable.html',
+        materials: 'https://drive.google.com/drive/folders/1iIwqKAh-EVdiAasDb2n3xZ466jSB2jQw?usp=drive_link'  // <-- materials link
     },
     2: {
         title: 'Software Engineering for Beginners',
@@ -54,8 +54,8 @@ const courses = {
         tools: ['Microsoft Visio or any similar tool'],
         screenshots: ['data/courses/2/1.png'],
         coverImage: 'data/courses/2/cover.jpg',
-        youtube: 'https://www.youtube.com/channel/your-channel-or-video-link-2',
-        materials: 'data/courses/2/materials.zip'
+        youtube: 'unavailable.html',
+        materials: 'https://drive.google.com/drive/folders/1f8Z8RKrYlFHvINi1FOi5kjGoEfwNJMtg?usp=drive_link'
     },
     3: {
         title: 'Full-Stack Web Development: PHP Native',
@@ -67,8 +67,8 @@ const courses = {
         tools: ['VS Code or Any Text Editor, Web Browser'],
         screenshots: ['data/courses/3/1.png', 'data/courses/3/2.png'],
         coverImage: 'data/courses/3/cover.jpg',
-        youtube: 'https://www.youtube.com/channel/your-channel-or-video-link-3',
-        materials: 'data/courses/3/materials.zip'
+        youtube: 'unavailable.html',
+        materials: 'https://drive.google.com/drive/folders/1NQTigIrMF9HCe543H_sBdGu_4gPTJ3Px?usp=drive_link'
     },
     4: {
         title: 'Data Analytics for Beginners',
@@ -80,8 +80,8 @@ const courses = {
         tools: ['Python using Google Colab or any similar tool'],
         screenshots: ['data/courses/4/1.png'],
         coverImage: 'data/courses/4/cover.jpg',
-        youtube: 'https://www.youtube.com/channel/your-channel-or-video-link-4',
-        materials: 'data/courses/4/materials.zip'
+        youtube: 'unavailable.html',
+        materials: 'https://drive.google.com/drive/folders/1rTKso7Drnrbiz9OQjiS7x8PlWJ5Lxx_-?usp=drive_link'
     },
     5: {
         title: 'Data Mining Via Generative AI using Gemini',
@@ -93,8 +93,8 @@ const courses = {
         tools: ['Python using Google Colab or any similar tool'],
         screenshots: ['data/courses/5/1.png'],
         coverImage: 'data/courses/5/cover.jpg',
-        youtube: 'https://www.youtube.com/channel/your-channel-or-video-link-5',
-        materials: 'data/courses/5/materials.zip'
+        youtube: 'unavailable.html',
+        materials: 'https://drive.google.com/drive/folders/1TNAgYzRHBfRrI5FgqLGM1fu-pmEyb0VH?usp=drive_link'
     },
     6: {
         title: 'Prewriting Stage of Storywriting',
@@ -106,8 +106,8 @@ const courses = {
         tools: ['Scrivener or any word processing software, and any Spreadsheet application (Optional)'],
         screenshots: ['data/courses/6/1.png', 'data/courses/6/2.png', 'data/courses/6/3.png', 'data/courses/6/4.png'],
         coverImage: 'data/courses/6/cover.jpg',
-        youtube: 'https://www.youtube.com/channel/your-channel-or-video-link-6',
-        materials: 'data/courses/6/materials.zip'
+        youtube: 'unavailable.html',
+        materials: 'https://drive.google.com/drive/folders/1sVr86jKbKByH9Wqmyy_vJD6E9R8PV-aw?usp=drive_link'
     }
 };
 

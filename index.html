@@ -553,7 +553,7 @@
                     <form action="https://docs.google.com/forms/d/e/1FAIpQLSc3T19veGTtY_JnSKb2zSU-gDBMVCVvX5ycLdU6Vbe1eHI-9g/formResponse" method="POST">
     <!-- Course Selection -->
     <div class="mb-3">
-        <label class="form-label">Your Course</label>
+        <label class="form-label">Service</label>
         <div class="request-options">
             <label class="radio-option">
                 <input type="radio" name="entry.198607469" value="Programming" onclick="updateSubtitle(this)" checked=""> <span>Programming</span>
@@ -565,9 +565,28 @@
                 <input type="radio" name="entry.198607469" value="Software Engineering" onclick="updateSubtitle(this)"> <span>Software Engineering</span>
             </label>
             <label class="radio-option">
+                <input type="radio" name="entry.198607469" value="Consultation" onclick="updateSubtitle(this)"> <span>Consultation</span>
+            </label>
+            <label class="radio-option">
                 <input type="radio" name="entry.198607469" value="Other" onclick="updateSubtitle(this)"> <span>Other</span>
             </label>
         </div>
+        <div id="service-subtitle" class="mt-2 text-muted">Get help with coding in Python, JavaScript, Java, C++, and more.</div>
+        <script>
+            function updateSubtitle(radio) {
+                console.log("Works");
+                const subtitles = {
+                    "Programming": "Get help with coding in Python, JavaScript, Java, C++, and more.",
+                    "Data Mining": "Extract and analyze data from large datasets using tools like Python, R, or SQL.",
+                    "Software Engineering": "Assistance with architecture, testing, and software design patterns.",
+                    "Consultation": "Schedule a session for expert advice or project guidance.",
+                    "Other": "Specify your unique needs or custom requests."
+                };
+
+                const subtitleElement = document.getElementById("service-subtitle");
+                subtitleElement.textContent = subtitles[radio.value] || "";
+            }
+        </script>
     </div>
 
     <!-- Name -->
